@@ -1,0 +1,36 @@
+﻿<Window x:Class="pract1c.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="KrestikiNoliki" Height="350" Width="350">
+    <Grid x:Name="game">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="bt0" Grid.Row="0" Grid.Column="0" Content="" Click="Button_Click"/>
+        <Button x:Name="bt1" Grid.Row="0" Grid.Column="1" Content="" Click="Button_Click"/>
+        <Button x:Name="bt2" Grid.Row="0" Grid.Column="2" Content="" Click="Button_Click"/>
+
+        <Button x:Name="bt3" Grid.Row="1" Grid.Column="0" Content="" Click="Button_Click"/>
+        <Button x:Name="bt4" Grid.Row="1" Grid.Column="1" Content="" Click="Button_Click"/>
+        <Button x:Name="bt5" Grid.Row="1" Grid.Column="2" Content="" Click="Button_Click"/>
+
+        <Button x:Name="bt6" Grid.Row="2" Grid.Column="0" Content="" Click="Button_Click"/>
+        <Button x:Name="bt7" Grid.Row="2" Grid.Column="1" Content="" Click="Button_Click"/>
+        <Button x:Name="bt8" Grid.Row="2" Grid.Column="2" Content="" Click="Button_Click"/>
+
+        <Button x:Name="restartButton" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Click="Restart_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" Height="30" Width="100">
+            <Button.Content>
+                <TextBlock Text="Начать заново" />
+            </Button.Content>
+        </Button>
+    </Grid>
+</Window>
